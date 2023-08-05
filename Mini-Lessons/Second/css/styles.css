@@ -1,0 +1,30 @@
+body {
+    background-color: #66BFBF;
+}
+
+h1 {
+    color: red;
+    font-size: 200px;
+}
+
+img:hover {
+    background-color: gold;
+}
+
+.bacon {
+    height: 170px;
+    background-color: greenyellow;
+}
+
+.mango {
+    height: 170px;
+    background-color: red;
+}
+
+.circular {
+    border-radius: 100%;
+}
+
+#heading {
+    color: blue;
+}

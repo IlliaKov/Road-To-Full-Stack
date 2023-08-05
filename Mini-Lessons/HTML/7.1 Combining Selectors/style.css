@@ -1,0 +1,24 @@
+/* Write your code here: */
+h1, h2 {
+    color: blueviolet;
+}
+
+/*Child*/
+.box > .done {
+    color: firebrick;
+}
+
+/*Descendant*/
+.box .list {
+    color: blue;
+}
+
+/*Chaining*/
+li.done{
+    color: seagreen;
+}
+
+/*Combining Combiners*/
+ul p.done {
+    font-size: 0.5rem;
+}
