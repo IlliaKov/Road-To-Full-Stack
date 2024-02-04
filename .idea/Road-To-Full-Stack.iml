@@ -8,10 +8,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="font-awesome" level="application" />
     <orderEntry type="library" name="@types/math-expression-evaluator" level="application" />
     <orderEntry type="library" name="@types/math-random" level="application" />
-    <orderEntry type="library" name="jquery-3.7.0" level="application" />
   </component>
 </module>
