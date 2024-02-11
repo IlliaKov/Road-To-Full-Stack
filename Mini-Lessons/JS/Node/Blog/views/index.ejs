@@ -1,0 +1,33 @@
+<%- include("partials/header.ejs") %>
+
+<div class="content">
+    <form action="/list" method="POST">
+        <label for="fName">First name:</label><br>
+        <input type="text" id="fName" name="fName"><br>
+
+        <label for="lName">Last name:</label><br>
+        <input type="text" id="lName" name="lName"><br>
+
+        <label for="topicField">Topic field:</label><br>
+        <input type="text" id="topicField" name="topicField"><br>
+
+        <label for="textField">Text field:</label><br>
+        <input type="text" id="textField" name="textField"><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<div class="content">
+    <form action="/todo-list" method="POST">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+
+        <label for="description">Description:</label><br>
+        <input type="text" id="description" name="description"><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<%- include("partials/footer.ejs") %>

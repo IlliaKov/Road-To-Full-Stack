@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+<h1>TODO list</h1>
+
+<% if (todoList.length > 0) { %>
+    <ul>
+        <% todoList.forEach((task, id) => { %>
+            <li>
+                <a href="/todo-list/todo-post/<%= id %>"><%=task.title%> – <%= id %></a>
+                <a href="/todo-list/todo-edit/<%= id %>">Edit</a>
+                <a href="/todo-list/todo-delete/<%= id %>">Delete</a>
+            </li>
+        <% }) %>
+    </ul>
+<% } else { %>
+    <p>No posts yet</p>
+<% } %>
+
+<a href="/list">Back to the main list</a>
+
+<%- include("partials/footer.ejs") %>

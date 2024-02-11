@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Post list</h1>
+
+<% if (postList.length > 0) { %>
+    <ul>
+        <% postList.forEach((post, id) => { %>
+            <li>
+                <a href="/list/post/<%= id %>"><%=post.topicField%> – <%= id %></a>
+                <a href="/list/edit/<%= id %>">Edit</a>
+                <a href="/list/delete/<%= id %>">Delete</a>
+            </li>
+        <% }) %>
+    </ul>
+<% } else { %>
+    <p>No posts yet</p>
+<% } %>
+
+<a href="/">Back to the home</a>
+
+<%- include("partials/footer.ejs") %>

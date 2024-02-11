@@ -1,0 +1,23 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Edit</h1>
+
+<div class="content">
+    <form action="/list/edit/<%= postId %>" method="POST">
+        <label for="fName">First name:</label><br>
+        <input type="text" id="fName" name="fName" value="<%= post.fName %>"><br>
+
+        <label for="lName">Last name:</label><br>
+        <input type="text" id="lName" name="lName" value="<%= post.lName %>"><br>
+
+        <label for="topicField">Topic field:</label><br>
+        <input type="text" id="topicField" name="topicField" value="<%= post.topicField %>"><br>
+
+        <label for="textField">Text field:</label><br>
+        <input type="text" id="textField" name="textField" value="<%= post.textField %>"><br>
+
+        <button type="submit">Edit</button>
+    </form>
+</div>
+
+<%- include("partials/footer.ejs") %>

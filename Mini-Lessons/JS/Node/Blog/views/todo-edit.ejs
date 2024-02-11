@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Edit</h1>
+
+<div class="content">
+    <form action="/todo-list/todo-edit/<%= postId %>" method="POST">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" value="<%= post.title %>"><br>
+
+        <label for="description">Description:</label><br>
+        <input type="text" id="description" name="description" value="<%= post.description %>"><br>
+
+        <button type="submit">Edit</button>
+    </form>
+</div>
+
+<%- include("partials/footer.ejs") %>
