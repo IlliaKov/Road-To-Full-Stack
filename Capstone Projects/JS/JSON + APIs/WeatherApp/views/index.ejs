@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+<div class="weather">
+
+    <h1>What's the weather in Kyiv?</h1>
+
+    <div class="current-weather">
+        <p>Current temperature: <%= weather.current.temperature_2m %> °C</p>
+        <p>Day/Night: <%= weather.current.is_day ? 'Day' : 'Night' %></p>
+        <p>Time: <%= weather.current.time %></p>
+    </div>
+
+    <div class="daily-weather">
+        <p>Max Temperature: <%= weather.daily.temperature_2m_max %>°C</p>
+        <p>Min Temperature: <%= weather.daily.temperature_2m_min %>°C</p>
+        <p>Sunrise: <%= weather.daily.sunrise %></p>
+        <p>Sunset: <%= weather.daily.sunset %></p>
+        <p>UV Index Max: <%= weather.daily.uv_index_max %></p>
+    </div>
+</div>
+</body>
+
+</html>
